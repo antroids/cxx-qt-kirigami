@@ -11,4 +11,4 @@ cxx-qt = "0.5.1"
 cxx-qt-lib = { version = "0.5.1", features = ["qt_qml"] }
 
 [build-dependencies]
-cxx-qt-build = { path = "/home/ak/IdeaProjects/cxx-qt/crates/cxx-qt-build" }
+cxx-qt-build = "0.5.1"

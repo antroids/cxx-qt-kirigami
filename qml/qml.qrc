@@ -2,8 +2,5 @@
 <qresource>
 <file>./content/App.qml</file>
 <file>./qtquickcontrols2.conf</file>
-<file>./content/HomeScreen.qml</file>
-<file>./content/ClientsScreen.qml</file>
-<file>./content/ScreenContainer.qml</file>
 </qresource>
 </RCC>

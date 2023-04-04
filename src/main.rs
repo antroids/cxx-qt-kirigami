@@ -15,7 +15,7 @@ fn main() {
     // }
 
     if let Some(engine) = engine.as_mut() {
-        engine.add_import_path(&QString::from("/home/ak/kde/qt6/usr/lib/x86_64-linux-gnu/qml"));
+        engine.add_import_path(&QString::from("/usr/lib/x86_64-linux-gnu/qt6/qml"));
     }
 
     // Load the QML path into the engine
