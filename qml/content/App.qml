@@ -10,13 +10,17 @@ import org.cxx_qt_kirigami.template 1.0
 
 // Provides basic features needed for all kirigami applications
 Kirigami.ApplicationWindow {
+    QLocalizedContext {
+        id: lc
+    }
+
     // Unique identifier to reference this object
     id: root
 
     // Window title
     // i18nc() makes a string translatable
     // and provides additional context for the translators
-    title: i18nc("@title:window", "Hello World")
+    title: lc.i18nc("@title:window", "Hello World")
 
     // Set the first page that will be loaded when the app opens
     // This can also be set to an id of a Kirigami.Page
@@ -24,7 +28,7 @@ Kirigami.ApplicationWindow {
         Controls.Label {
             // Center label horizontally and vertically within parent object
             anchors.centerIn: parent
-            text: i18n("Hello World!")
+            text: lc.i18n("Hello World!")
         }
 
         QTemplateObject {

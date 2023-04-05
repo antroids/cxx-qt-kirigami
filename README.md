@@ -2,13 +2,13 @@
 
 ## Requirements:
 * Qt6
-* KDE Kirigami2 based on Qt6 ([can be built from sources](https://community.kde.org/Get_Involved/development#Building_software_with_kdesrc-build))
+* KDE Kirigami2 and KI18n based on Qt6 ([can be built from sources](https://community.kde.org/Get_Involved/development#Building_software_with_kdesrc-build))
 * Dependencies of [CXX-Qt](https://github.com/KDAB/cxx-qt)
 
 ## Configuration:
-* Check the Import Path in **main.rs**
-* Make sure that **libKF6Kirigami2.so** is in the search path or specify it in the **build.rs** by **cargo:rustc-link-search**
-* Add QT_VERSION_MAJOR=6 to the environment if two major Qt versions are installed
+* **KDE_INCLUDEDIR**: must contain `KF6/KI18n/klocalizedcontext.h` (default `/usr/include/`)
+* **KDE_LIBDIR**: libraries search path; `libKF6I18n.so` and `libKF6Kirigami2.so` should be there (default `/usr/lib/x86_64-linux-gnu/`)
+* **KDE_QMLDIR**: QML modules directory (default `/usr/lib/x86_64-linux-gnu/qt6/qml/`)
 
 ## Debug
 * Define **QML_IMPORT_TRACE**=1 to see QML import resolution logs
