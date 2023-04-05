@@ -9,7 +9,7 @@
 * **KDE_INCLUDEDIR**: must contain `KF6/KI18n/klocalizedcontext.h` (default `/usr/include/`)
 * **KDE_LIBDIR**: libraries search path; `libKF6I18n.so` and `libKF6Kirigami2.so` should be there (default `/usr/lib/x86_64-linux-gnu/`)
 * **KDE_QMLDIR**: QML modules directory (default `/usr/lib/x86_64-linux-gnu/qt6/qml/`)
-* **LD_LIBRARY_PATH**: may be required to run the QT app, set the same as **KDE_LIBDIR**
+* **LD_LIBRARY_PATH**: may be required to run the QT app, set to the same as **KDE_LIBDIR**
 
 ## Debug
 * Define **QML_IMPORT_TRACE**=1 to see QML import resolution logs
